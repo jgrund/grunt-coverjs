@@ -1,6 +1,6 @@
 # grunt-cover
 
-Grunt task to instrument JavaScript files.
+Grunt task to instrument JavaScript files using coverjs.
 
 ## Getting Started
 Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-cover`
