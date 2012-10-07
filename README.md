@@ -17,7 +17,7 @@ grunt.loadNpmTasks('grunt-cover');
 ## Documentation
 Inside your project's `grunt.js` gruntfile, add a section named ```cover```. 
 
-The cover section can has a ```compile``` parameter, inside which you list the files to be instrumented:
+The cover section has a ```compile``` parameter, inside which you list the files to be instrumented:
 
 ```javascript
     cover: {
@@ -29,3 +29,5 @@ The cover section can has a ```compile``` parameter, inside which you list the f
       }
     }
 ```
+
+When the task runs, the files will be instrumented and placed in the specifed path.
