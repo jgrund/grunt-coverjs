@@ -15,14 +15,17 @@ grunt.loadNpmTasks('grunt-cover');
 [getting_started]: https://github.com/gruntjs/grunt/blob/master/docs/getting_started.md
 
 ## Documentation
-_(Coming soon)_
+Inside your project's `grunt.js` gruntfile, add a section named ```cover```. 
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].
+The cover section can has a ```compile``` parameter, inside which you list the files to be instrumented:
 
-## Release History
-_(Nothing yet)_
-
-## License
-Copyright (c) 2012 Joe Grund  
-Licensed under the MIT license.
+```javascript
+    cover: {
+      compile: {
+        files: {
+          'instrumented/testCoverage.js': ['test/fixtures/testCoverage.js'],
+          'instrumented/testDir/*.js': ['test/fixtures/testCoverage2.js', 'test/fixtures/nested/testCoverage3.js']
+        }
+      }
+    }
+```
