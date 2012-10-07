@@ -21,7 +21,7 @@
     }
   ],
   "main": "grunt.js",
-  "bin": "bin/grunt-coverjs",
+  "bin": "bin/grunt-cover",
   "engines": {
     "node": "*"
   },
