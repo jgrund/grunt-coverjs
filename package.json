@@ -2,22 +2,22 @@
   "name": "grunt-coverjs",
   "description": "Grunt task to instrument JavaScript files.",
   "version": "0.1.0",
-  "homepage": "https://github.com/grundjoseph/grunt-coverjs",
+  "homepage": "https://github.com/jgrund/grunt-coverjs",
   "author": {
     "name": "Joe Grund",
     "email": "joe@oneluxsystems.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/grundjoseph/grunt-coverjs.git"
+    "url": "git://github.com/jgrund/grunt-coverjs.git"
   },
   "bugs": {
-    "url": "https://github.com/grundjoseph/grunt-coverjs/issues"
+    "url": "https://github.com/jgrund/grunt-coverjs/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/grundjoseph/grunt-coverjs/blob/master/LICENSE-MIT"
+      "url": "https://github.com/jgrund/grunt-coverjs/blob/master/LICENSE-MIT"
     }
   ],
   "main": "grunt.js",
