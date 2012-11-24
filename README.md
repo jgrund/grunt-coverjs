@@ -1,4 +1,4 @@
-# grunt-cover
+# grunt-cover [![Build Status](https://secure.travis-ci.org/jgrund/grunt-cover-js.png?branch=master)](http://travis-ci.org/jgrund/grunt-cover-js)
 
 Grunt task to instrument JavaScript files using coverjs.
 
@@ -15,7 +15,7 @@ grunt.loadNpmTasks('grunt-coverjs');
 [getting_started]: https://github.com/gruntjs/grunt/blob/master/docs/getting_started.md
 
 ## Documentation
-Inside your project's `grunt.js` gruntfile, add a section named ```cover```. 
+Inside your project's `grunt.js` gruntfile, add a section named ```cover```.
 
 The cover section has a ```compile``` parameter, inside which you list the files to be instrumented:
 
