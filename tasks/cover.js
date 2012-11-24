@@ -9,6 +9,9 @@
 module.exports = function (grunt) {
   'use strict';
 
+  /**
+   * Note: If the instrument method throws an error this task will force an abort.
+   */
   grunt.registerMultiTask('cover', 'Instruments JavaScript Files using coverjs.', function () {
     var path = require('path');
     var helpers = require('grunt-lib-contrib').init(grunt);
@@ -30,8 +33,6 @@ module.exports = function (grunt) {
 
     /**
      * Instruments the given source file.
-     *
-     * If the instrument method throws an error this task will force an abort.
      *
      * @param srcFile
      * @return {String} Returns the instrumented source file as a string.
