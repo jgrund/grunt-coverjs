@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "coverjs": "0.0.7-alpha",
-    "grunt-contrib-lib": "~0.3.0"
+    "grunt-lib-contrib": "~0.3.0"
   },
   "devDependencies": {
     "grunt": "~0.3.16",
