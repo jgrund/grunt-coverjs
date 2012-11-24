@@ -26,7 +26,7 @@
     "node": "*"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt tests"
   },
   "dependencies": {
     "coverjs": "0.0.7-alpha",

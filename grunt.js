@@ -51,7 +51,8 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-clean');
 
-  // Default task.
-  grunt.registerTask('default', 'lint clean cover test');
+  grunt.registerTask('tests', 'lint clean cover test');
 
+  // Default task.
+  grunt.registerTask('default', 'tests');
 };
