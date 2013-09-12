@@ -15,7 +15,6 @@ module.exports = function (grunt) {
   grunt.registerMultiTask('cover', 'Instruments JavaScript Files using coverjs.', function () {
     var path = require('path');
     var helpers = require('grunt-lib-contrib').init(grunt);
-    var _ = grunt.utils._;
     var Instrument = require('coverjs').Instrument;
 
     var options = helpers.options(this, {
@@ -44,14 +43,14 @@ module.exports = function (grunt) {
       try {
         return new Instrument(srcCode, srcFile).instrument();
       } catch (e) {
-        grunt.log.error(_.sprintf('File %s could not be instrumented.', srcFile));
+        grunt.log.error('File %s could not be instrumented.', srcFile);
         grunt.fatal(e, 3);
       }
     }
 
     this.files.forEach(function (file) {
       file.dest = path.normalize(file.dest);
-      srcFiles = grunt.file.expandFiles(file.src);
+      srcFiles = grunt.file.expand(file.src);
 
       if (srcFiles.length === 0) {
         grunt.log.error('No source files found');
@@ -65,7 +64,7 @@ module.exports = function (grunt) {
         newFileDest = helpers.buildIndividualDest(file.dest, srcFile, basePath, options.flatten);
 
         grunt.file.write(newFileDest, instrumentedSrc);
-        grunt.log.ok(_.sprintf('Created: %s', newFileDest));
+        grunt.log.ok('Created: %s', newFileDest);
       });
     });
   });
