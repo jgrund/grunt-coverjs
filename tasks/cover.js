@@ -41,9 +41,9 @@ module.exports = function (grunt) {
       Instrument = require('coverjs').Instrument;
 
       try {
-        return new Instrument(srcCode, srcFile).instrument();
+        return new Instrument(srcCode, {name: srcFile}).instrument();
       } catch (e) {
-        grunt.log.error('File %s could not be instrumented.', srcFile);
+        grunt.log.error('File ' + srcFile + ' could not be instrumented.');
         grunt.fatal(e, 3);
       }
     }
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
         newFileDest = helpers.buildIndividualDest(file.dest, srcFile, basePath, options.flatten);
 
         grunt.file.write(newFileDest, instrumentedSrc);
-        grunt.log.ok('Created: %s', newFileDest);
+        grunt.log.ok('Created: ' + newFileDest);
       });
     });
   });

@@ -29,7 +29,7 @@
     "test": "grunt tests"
   },
   "dependencies": {
-    "coverjs": "0.0.7-alpha",
+    "coverjs": "~0.0.14",
     "grunt-lib-contrib": "~0.3.0"
   },
   "devDependencies": {
