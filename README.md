@@ -1,4 +1,4 @@
-# grunt-cover [![Build Status](https://secure.travis-ci.org/jgrund/grunt-coverjs.png?branch=master)](http://travis-ci.org/jgrund/grunt-coverjs)
+# grunt-cover [![Build Status](https://secure.travis-ci.org/jgrund/grunt-coverjs.png?branch=master)](http://travis-ci.org/jgrund/grunt-coverjs) [![NPM version](https://badge.fury.io/js/grunt-coverjs.svg)](http://badge.fury.io/js/grunt-coverjs)
 
 Grunt task to instrument JavaScript files using coverjs.
 
