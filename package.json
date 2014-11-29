@@ -1,7 +1,7 @@
 {
   "name": "grunt-coverjs",
   "description": "Grunt task to instrument JavaScript files.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/jgrund/grunt-coverjs",
   "author": {
     "name": "Joe Grund",
